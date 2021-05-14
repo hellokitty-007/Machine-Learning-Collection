@@ -36,7 +36,7 @@ class NN(nn.Module):
         # this case 10.
         self.fc1 = nn.Linear(input_size, 50)
         self.fc2 = nn.Linear(50, num_classes)
-
+  
     def forward(self, x):
         """
         x here is the mnist images and we run it through fc1, fc2 that we created above.
